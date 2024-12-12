@@ -14,6 +14,7 @@ __all__ = [
     "average_predictions",
     "initializer",
     "nonlinearity",
+    "attention_edge_conv",
 ]
 
 """ ====== Layers ====== """
@@ -25,28 +26,58 @@ __all__ = [
         - params: dictionary of parameters, could be None
 """
 
-
-def no_conv(input, params, filters=None, dropout_keep_prob=1.0, trainable=True, **kwargs):
-    vertices, _, _ = input
-    vertices = tf.nn.dropout(vertices, dropout_keep_prob)
+def attention_edge_conv(input, params, filters=None, dropout_keep_prob=1.0, trainable=True, **kwargs):
+    """
+    Simplified attention-based graph convolution
+    """
+    vertices, edges, nh_indices = input
+    nh_indices = tf.squeeze(nh_indices, axis=2)
     v_shape = vertices.get_shape()
+    e_shape = edges.get_shape()
+    nh_sizes = tf.expand_dims(tf.count_nonzero(nh_indices + 1, axis=1, dtype=tf.float32), -1)
+
     if params is None:
-        # create new weights
-        Wvc = tf.Variable(initializer("he", (v_shape[1].value, filters)), name="Wvc", trainable=trainable)  # (v_dims, filters)
+        # Create new weights
+        Wvc = tf.Variable(initializer("he", (v_shape[1].value, filters)), name="Wvc", trainable=trainable)
+        Wvn = tf.Variable(initializer("he", (v_shape[1].value, filters)), name="Wvn", trainable=trainable)
+        We = tf.Variable(initializer("he", (e_shape[2].value, filters)), name="We", trainable=trainable)
+        Wa = tf.Variable(initializer("he", (filters, 1)), name="Wa", trainable=trainable)
         bv = tf.Variable(initializer("zero", (filters,)), name="bv", trainable=trainable)
     else:
-        # use shared weights
+        Wvn, We = params["Wvn"], params["We"]
         Wvc = params["Wvc"]
+        Wa = params["Wa"] 
         bv = params["bv"]
         filters = Wvc.get_shape()[-1].value
-    params = {"Wvc": Wvc, "bv": bv}
 
-    # generate vertex signals
-    Zc = tf.matmul(vertices, Wvc, name="Zc")  # (n_verts, filters)
+    params = {"Wvn": Wvn, "We": We, "Wvc": Wvc, "Wa": Wa, "bv": bv}
+
+    # Generate center node features
+    Zc = tf.matmul(vertices, Wvc, name="Zc")
+
+    # Create neighbor signals
+    v_Wvn = tf.matmul(vertices, Wvn, name="v_Wvn")  # [num_nodes, filters]
+    neighbor_feats = tf.gather(v_Wvn, nh_indices)  # [num_nodes, num_neighbors, filters]
+    e_We = tf.tensordot(edges, We, axes=[[2], [0]], name="e_We")  # [num_nodes, num_neighbors, filters]
+    
+    # Combine node and edge features
+    combined_feats = neighbor_feats + e_We  # [num_nodes, num_neighbors, filters]
+
+    # Calculate attention scores (simpler method)
+    attention_feats = tf.tensordot(combined_feats, Wa, axes=[[2], [0]])  # [num_nodes, num_neighbors, 1]
+    attention_weights = tf.nn.softmax(attention_feats, dim=1)  # [num_nodes, num_neighbors, 1]
+    
+    # Apply attention and sum
+    weighted_feats = combined_feats * attention_weights # Will broadcast automatically
+    Zn = tf.divide(tf.reduce_sum(weighted_feats, axis=1), 
+                   tf.maximum(nh_sizes, tf.ones_like(nh_sizes)))
+
+    # Final combination
     nonlin = nonlinearity("relu")
-    sig = Zc + bv
+    sig = Zc + Zn + bv
     z = tf.reshape(nonlin(sig), tf.constant([-1, filters]))
     z = tf.nn.dropout(z, dropout_keep_prob)
+    
     return z, params
 
 
