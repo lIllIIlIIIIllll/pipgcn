@@ -39,13 +39,3 @@ Simply run:
 ```python experiment_runner.py <experiment>```.
 Where ```<experiment>``` is the name of the experiment file (including .yml extension) in the experiments directory.
 Alternatively you may run ```run_experiments.sh```, which contains expressions for all provided experiments.
-
-
-## Contact ##
-
-Please direct any questions to:
-
-* Alex Fout (fout[at]colostate.edu)
-* Jonathon Byrd (jonbyrd[at]colostate.edu)
-* Basir Shariat (basir[at]cs.colostate.edu
-* Asa Ben-Hur (asa[at]cs.colostate.edu)
