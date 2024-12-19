@@ -13,6 +13,44 @@ This work was supported by the National Science Foundation under grant no DBI-15
 - scikit-learn 0.19.1
 - tensorflow 1.0.1
 
+####Detail####
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_openmp_mutex             5.1                       1_gnu  
+blas                      1.0                         mkl  
+ca-certificates           2024.9.24            h06a4308_0  
+certifi                   2020.6.20          pyhd3eb1b0_3  
+funcsigs                  1.0.2                    pypi_0    pypi
+intel-openmp              2023.1.0         hdb19cb5_46306  
+libffi                    3.4.4                h6a678d5_1  
+libgcc-ng                 11.2.0               h1234567_1  
+libgfortran-ng            7.5.0               ha8ba4b0_17  
+libgfortran4              7.5.0               ha8ba4b0_17  
+libgomp                   11.2.0               h1234567_1  
+libstdcxx-ng              11.2.0               h1234567_1  
+mkl                       2018.0.3                      1  
+mkl_fft                   1.0.6            py27h7dd41cf_0  
+mkl_random                1.0.1            py27h4414c95_1  
+mock                      3.0.5                    pypi_0    pypi
+ncurses                   6.4                  h6a678d5_0  
+numpy                     1.13.3           py27hdbf6ddf_4  
+pip                       19.3.1                   py27_0  
+protobuf                  3.17.3                   pypi_0    pypi
+python                    2.7.18               h42bf7aa_3  
+pyyaml                    3.12             py27h2d70dd7_1  
+readline                  8.2                  h5eee18b_0  
+scikit-learn              0.19.1           py27hedc7406_0  
+scipy                     1.1.0            py27hd20e5f9_0  
+setuptools                44.0.0                   py27_0  
+six                       1.16.0                   pypi_0    pypi
+sqlite                    3.45.3               h5eee18b_0  
+tensorflow                1.0.1                    pypi_0    pypi
+tk                        8.6.14               h39e8969_0  
+wheel                     0.37.1             pyhd3eb1b0_0  
+yaml                      0.2.5                h7b6447c_0  
+zlib                      1.2.13               h5eee18b_1  
+
+
 ### Environment Variables ###
 The software assumes the following environment variables are set:
 
