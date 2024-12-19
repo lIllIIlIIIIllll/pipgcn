@@ -59,6 +59,46 @@ The software assumes the following environment variables are set:
 - PL_EXPERIMENTS: full path of experiment library (YAML files)
 
 An alternative to setting these variables is to edit the portions of configuration.py which reference these environment variables.
+#### ####
+To add environment variables in Linux, you can follow these steps. This guide will help you set the required environment variables (`PL_DATA`, `PL_OUT`, and `PL_EXPERIMENTS`) either temporarily for the current session or permanently for all future sessions.
+
+### Setting Environment Variables in Linux
+
+#### 1. Temporary Environment Variables
+
+If you want to set the environment variables for the current terminal session only, you can use the `export` command. This will last until you close the terminal.
+
+Open your terminal and run the following commands:
+
+export PL_DATA=/path/to/your/data/directory
+export PL_OUT=/path/to/your/output/directory
+export PL_EXPERIMENTS=/path/to/your/experiment/library
+
+Replace `/path/to/your/data/directory`, `/path/to/your/output/directory`, and `/path/to/your/experiment/library` with the actual paths you want to use.
+
+#### 2. Permanent Environment Variables
+
+To set environment variables permanently, you can add them to your shell's configuration file. The file you need to edit depends on the shell you are using. Common shells include bash
+
+##### For Bash Users
+
+1. Open the .bashrc file in your home directory with a text editor (e.g., nano, vim, or gedit):
+   nano ~/.bashrc
+
+2. Add the following lines at the end of the file:
+   export PL_DATA=/path/to/your/data/directory
+   export PL_OUT=/path/to/your/output/directory
+   export PL_EXPERIMENTS=/path/to/your/experiment/library
+
+3. Save the file and exit the editor (in `nano`, you can do this by pressing CTRL + X, then Y, and `Enter`).
+
+4. To apply the changes, run:
+   source ~/.bashrc
+   
+### Alternative: Editing `configuration.py`
+
+If you prefer not to set environment variables, you can directly edit the configuration.py file in your software's directory. Look for the sections that reference PL_DATA, PL_OUT, and PL_EXPERIMENTS, and replace them with the full paths you want to use.
+
 
 ### CUDA Setup ###
 Consider setting the following environment variables for CUDA use:
