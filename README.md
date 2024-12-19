@@ -13,8 +13,8 @@ This work was supported by the National Science Foundation under grant no DBI-15
 - scikit-learn 0.19.1
 - tensorflow 1.0.1
 
-####Detail####
-# Name                    Version                   Build  Channel
+### Detail ###
+Name                    Version                   Build  Channel
 _libgcc_mutex             0.1                        main  
 _openmp_mutex             5.1                       1_gnu  
 blas                      1.0                         mkl  
