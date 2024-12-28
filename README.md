@@ -110,9 +110,6 @@ Consider setting the following environment variables for CUDA use:
 
 To run the provided experiments, you need the pickle files found [here](https://zenodo.org/record/1127774#.WkLewGGnGcY).
 
-## What I done ##
-attention_edge_conv in nn_components.py
-add python experiment_runner.py attention_test.yml in run_experiments.sh
 
 ## Running Experiments ##
 
@@ -120,3 +117,8 @@ Simply run:
 ```python experiment_runner.py <experiment>```.
 Where ```<experiment>``` is the name of the experiment file (including .yml extension) in the experiments directory.
 Alternatively you may run ```run_experiments.sh```, which contains expressions for all provided experiments.
+
+
+## What I done ##
+attention_edge_conv in nn_components.py
+add python experiment_runner.py attention_test.yml in run_experiments.sh
