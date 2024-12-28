@@ -121,4 +121,7 @@ Alternatively you may run ```run_experiments.sh```, which contains expressions f
 
 ## What I done ##
 attention_edge_conv in nn_components.py
-add python experiment_runner.py attention_test.yml in run_experiments.sh
+
+edit in run_experiments.sh
+
+add attention.ymal
