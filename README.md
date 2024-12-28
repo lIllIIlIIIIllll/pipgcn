@@ -125,3 +125,14 @@ attention_edge_conv in nn_components.py
 edit in run_experiments.sh
 
 add attention.ymal
+
+
+## Acknowledgments ##
+
+Thanks to Alex Fout  for their work on this project. This fork includes modifications to nn_components.py, and aims to add attention mechnism.
+
+For more information about the original project, visit https://github.com/fouticus/pipgcn.
+
+
+
+
