@@ -420,4 +420,154 @@ W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn'
 2024-12-16 11:35:30| 3_layer_attention: rep9
 2024-12-16 11:35:30| Building model
 2024-12-16 11:35:31| Fitting Model
-
+2024-12-16 17:29:55| Results for epoch_80
+2024-12-16 17:30:26| epoch_80_train total loss: 13.262
+2024-12-16 17:30:26| epoch_80_train average loss per protein: 0.076
+2024-12-16 17:42:47| epoch_80_test total loss: 89.497
+2024-12-16 17:42:47| epoch_80_test average loss per protein: 1.627
+2024-12-16 17:42:47| epoch_80_train average protein auc: 0.905
+2024-12-16 17:42:47| epoch_80_train median protein auc: 0.913
+2024-12-16 17:42:48| epoch_80_test average protein auc: 0.841
+2024-12-16 17:42:48| epoch_80_test median protein auc: 0.851
+2024-12-16 17:42:49| epoch_80_train median auprc: 0.506
+2024-12-16 17:42:50| epoch_80_test median auprc: 0.013
+2024-12-16 17:42:50| 4_layer_attention: rep0
+2024-12-16 17:42:50| Building model
+2024-12-16 17:42:51| Fitting Model
+2024-12-17 02:05:51| Results for epoch_80
+2024-12-17 02:06:22| epoch_80_train total loss: 12.055
+2024-12-17 02:06:22| epoch_80_train average loss per protein: 0.069
+2024-12-17 02:21:13| epoch_80_test total loss: 70.904
+2024-12-17 02:21:13| epoch_80_test average loss per protein: 1.289
+2024-12-17 02:21:13| epoch_80_train average protein auc: 0.922
+2024-12-17 02:21:13| epoch_80_train median protein auc: 0.935
+2024-12-17 02:21:14| epoch_80_test average protein auc: 0.849
+2024-12-17 02:21:14| epoch_80_test median protein auc: 0.876
+2024-12-17 02:21:14| epoch_80_train median auprc: 0.570
+2024-12-17 02:21:15| epoch_80_test median auprc: 0.013
+2024-12-17 02:21:15| 4_layer_attention: rep1
+2024-12-17 02:21:15| Building model
+2024-12-17 02:21:16| Fitting Model
+2024-12-17 10:33:56| Results for epoch_80
+2024-12-17 10:34:31| epoch_80_train total loss: 12.164
+2024-12-17 10:34:31| epoch_80_train average loss per protein: 0.070
+2024-12-17 10:49:18| epoch_80_test total loss: 79.452
+2024-12-17 10:49:18| epoch_80_test average loss per protein: 1.445
+2024-12-17 10:49:18| epoch_80_train average protein auc: 0.922
+2024-12-17 10:49:18| epoch_80_train median protein auc: 0.935
+2024-12-17 10:49:19| epoch_80_test average protein auc: 0.852
+2024-12-17 10:49:19| epoch_80_test median protein auc: 0.871
+2024-12-17 10:49:19| epoch_80_train median auprc: 0.565
+2024-12-17 10:49:20| epoch_80_test median auprc: 0.015
+2024-12-17 10:49:20| 4_layer_attention: rep2
+2024-12-17 10:49:20| Building model
+2024-12-17 10:49:21| Fitting Model
+2024-12-17 19:11:14| Results for epoch_80
+2024-12-17 19:11:43| epoch_80_train total loss: 13.416
+2024-12-17 19:11:43| epoch_80_train average loss per protein: 0.077
+2024-12-17 19:26:54| epoch_80_test total loss: 108.315
+2024-12-17 19:26:54| epoch_80_test average loss per protein: 1.969
+2024-12-17 19:26:54| epoch_80_train average protein auc: 0.905
+2024-12-17 19:26:54| epoch_80_train median protein auc: 0.917
+2024-12-17 19:26:55| epoch_80_test average protein auc: 0.843
+2024-12-17 19:26:55| epoch_80_test median protein auc: 0.854
+2024-12-17 19:26:55| epoch_80_train median auprc: 0.512
+2024-12-17 19:26:56| epoch_80_test median auprc: 0.013
+2024-12-17 19:26:56| 4_layer_attention: rep3
+2024-12-17 19:26:56| Building model
+2024-12-17 19:26:57| Fitting Model
+2024-12-18 04:05:34| Results for epoch_80
+2024-12-18 04:06:12| epoch_80_train total loss: 13.568
+2024-12-18 04:06:12| epoch_80_train average loss per protein: 0.078
+2024-12-18 04:21:32| epoch_80_test total loss: 95.370
+2024-12-18 04:21:32| epoch_80_test average loss per protein: 1.734
+2024-12-18 04:21:32| epoch_80_train average protein auc: 0.904
+2024-12-18 04:21:32| epoch_80_train median protein auc: 0.915
+2024-12-18 04:21:33| epoch_80_test average protein auc: 0.835
+2024-12-18 04:21:33| epoch_80_test median protein auc: 0.847
+2024-12-18 04:21:33| epoch_80_train median auprc: 0.511
+2024-12-18 04:21:34| epoch_80_test median auprc: 0.012
+2024-12-18 04:21:34| 4_layer_attention: rep4
+2024-12-18 04:21:34| Building model
+2024-12-18 04:21:35| Fitting Model
+2024-12-18 12:47:37| Results for epoch_80
+2024-12-18 12:48:09| epoch_80_train total loss: 12.473
+2024-12-18 12:48:09| epoch_80_train average loss per protein: 0.071
+2024-12-18 13:03:25| epoch_80_test total loss: 84.918
+2024-12-18 13:03:25| epoch_80_test average loss per protein: 1.544
+2024-12-18 13:03:25| epoch_80_train average protein auc: 0.916
+2024-12-18 13:03:25| epoch_80_train median protein auc: 0.928
+2024-12-18 13:03:26| epoch_80_test average protein auc: 0.853
+2024-12-18 13:03:26| epoch_80_test median protein auc: 0.882
+2024-12-18 13:03:26| epoch_80_train median auprc: 0.531
+2024-12-18 13:03:27| epoch_80_test median auprc: 0.013
+2024-12-18 13:03:27| 4_layer_attention: rep5
+2024-12-18 13:03:27| Building model
+2024-12-18 13:03:29| Fitting Model
+2024-12-18 21:32:34| Results for epoch_80                                           
+2024-12-18 21:33:11| epoch_80_train total loss: 12.121
+2024-12-18 21:33:11| epoch_80_train average loss per protein: 0.069
+2024-12-18 21:48:32| epoch_80_test total loss: 70.418
+2024-12-18 21:48:32| epoch_80_test average loss per protein: 1.280
+2024-12-18 21:48:32| epoch_80_train average protein auc: 0.922
+2024-12-18 21:48:32| epoch_80_train median protein auc: 0.933
+2024-12-18 21:48:33| epoch_80_test average protein auc: 0.849
+2024-12-18 21:48:33| epoch_80_test median protein auc: 0.874
+2024-12-18 21:48:33| epoch_80_train median auprc: 0.568
+2024-12-18 21:48:34| epoch_80_test median auprc: 0.014
+2024-12-18 21:48:34| 4_layer_attention: rep6
+2024-12-18 21:48:34| Building model
+2024-12-18 21:48:35| Fitting Model
+2024-12-19 06:15:22| Results for epoch_80
+2024-12-19 06:15:56| epoch_80_train total loss: 14.118
+2024-12-19 06:15:56| epoch_80_train average loss per protein: 0.081
+2024-12-19 06:31:06| epoch_80_test total loss: 127.339
+2024-12-19 06:31:06| epoch_80_test average loss per protein: 2.315
+2024-12-19 06:31:06| epoch_80_train average protein auc: 0.905
+2024-12-19 06:31:06| epoch_80_train median protein auc: 0.912
+2024-12-19 06:31:08| epoch_80_test average protein auc: 0.842
+2024-12-19 06:31:08| epoch_80_test median protein auc: 0.850
+2024-12-19 06:31:08| epoch_80_train median auprc: 0.504
+2024-12-19 06:31:09| epoch_80_test median auprc: 0.013
+2024-12-19 06:31:09| 4_layer_attention: rep7
+2024-12-19 06:31:09| Building model
+2024-12-19 06:31:10| Fitting Model
+2024-12-19 14:57:35| Results for epoch_80
+2024-12-19 14:58:05| epoch_80_train total loss: 13.532
+2024-12-19 14:58:05| epoch_80_train average loss per protein: 0.077
+2024-12-19 15:13:22| epoch_80_test total loss: 62.911
+2024-12-19 15:13:22| epoch_80_test average loss per protein: 1.144
+2024-12-19 15:13:22| epoch_80_train average protein auc: 0.912
+2024-12-19 15:13:22| epoch_80_train median protein auc: 0.925
+2024-12-19 15:13:23| epoch_80_test average protein auc: 0.852
+2024-12-19 15:13:23| epoch_80_test median protein auc: 0.873
+2024-12-19 15:13:23| epoch_80_train median auprc: 0.526
+2024-12-19 15:13:24| epoch_80_test median auprc: 0.015
+2024-12-19 15:13:24| 4_layer_attention: rep8
+2024-12-19 15:13:24| Building model
+2024-12-19 15:13:25| Fitting Model
+2024-12-19 23:38:24| Results for epoch_80
+2024-12-19 23:38:58| epoch_80_train total loss: 12.667
+2024-12-19 23:38:58| epoch_80_train average loss per protein: 0.072
+2024-12-19 23:54:20| epoch_80_test total loss: 92.739
+2024-12-19 23:54:20| epoch_80_test average loss per protein: 1.686
+2024-12-19 23:54:20| epoch_80_train average protein auc: 0.914
+2024-12-19 23:54:20| epoch_80_train median protein auc: 0.930
+2024-12-19 23:54:21| epoch_80_test average protein auc: 0.852
+2024-12-19 23:54:21| epoch_80_test median protein auc: 0.863
+2024-12-19 23:54:21| epoch_80_train median auprc: 0.557
+2024-12-19 23:54:22| epoch_80_test median auprc: 0.013
+2024-12-19 23:54:22| 4_layer_attention: rep9
+2024-12-19 23:54:22| Building model
+2024-12-19 23:54:23| Fitting Model
+2024-12-20 08:19:39| Results for epoch_80
+2024-12-20 08:20:11| epoch_80_train total loss: 13.804
+2024-12-20 08:20:11| epoch_80_train average loss per protein: 0.079
+2024-12-20 08:34:43| epoch_80_test total loss: 121.077
+2024-12-20 08:34:43| epoch_80_test average loss per protein: 2.201
+2024-12-20 08:34:43| epoch_80_train average protein auc: 0.904
+2024-12-20 08:34:43| epoch_80_train median protein auc: 0.918
+2024-12-20 08:34:44| epoch_80_test average protein auc: 0.838
+2024-12-20 08:34:44| epoch_80_test median protein auc: 0.853
+2024-12-20 08:34:44| epoch_80_train median auprc: 0.504
+2024-12-20 08:34:46| epoch_80_test median auprc: 0.012
